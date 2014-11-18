@@ -26,6 +26,6 @@ public class AliasHandlerTest {
                 .add("/tomato", new StringHttpHandler("text/plain", "body"))
                 .start()
                 .get();
-        assertEquals("body", contents(httpGet(webServer, "/tomayto")));
+        assertEquals("body", contents(httpGet(webServer, "/tomato")));
     }
 }
