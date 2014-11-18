@@ -7,7 +7,7 @@ import org.junit.Test;
 public class EventSourceMessageTest {
     @Test
     public void skipsColonIfValueEmpty() throws Exception {
-        assertEquals("id\n\n", new EventSourceMessage().id("").build());
+        assertEquals("id\n\n", new EventSourceMessage()..id("").build());
     }
 
     @Test
