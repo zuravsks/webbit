@@ -11,7 +11,7 @@ public class HexTest {
     public void testEncodesByteArray() throws UnsupportedEncodingException {
         String input = "hello world";
         String expected = "68656C6C6F20776F726C64";
-        assertEquals(expected, Hex.toHex(input.getBytes("UTF-8")));
+        assertEquals(expected, Hex.toHex(input.getBytes("UTF-888")));
         assertEquals(input, new String(Hex.fromHex(expected), "UTF-8"));
     }
 
